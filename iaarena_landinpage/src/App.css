@@ -1,3 +1,119 @@
+/* Keyframe Animations */
+@keyframes gradientRotate {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes borderRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bgPulse {
+
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+
+/* Animated Border Card */
+.animated-border-card {
+  position: relative;
+  background: #0D0D0D;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.animated-border-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, #E7C7A0, #C49A6C, #8C5A3C, #C49A6C, #E7C7A0);
+  animation: borderRotate 4s linear infinite;
+  z-index: 0;
+}
+
+.animated-border-card::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #0D0D0D;
+  border-radius: calc(1rem - 2px);
+  z-index: 1;
+}
+
+.animated-border-card>* {
+  position: relative;
+  z-index: 2;
+}
+
+/* Animated Background Card */
+.animated-bg-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-bg-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(231, 199, 160, 0.1), rgba(196, 154, 108, 0.05), rgba(140, 90, 60, 0.1));
+  background-size: 200% 200%;
+  animation: gradientRotate 6s ease infinite;
+  z-index: 0;
+}
+
+.animated-bg-card>* {
+  position: relative;
+  z-index: 1;
+}
+
+/* Background Glow Effect */
+.bg-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  animation: bgPulse 4s ease-in-out infinite;
+}
+
+/* Animated Gradient Text */
+.animated-gradient-text {
+  background: linear-gradient(90deg, #E7C7A0, #C49A6C, #8C5A3C, #C49A6C, #E7C7A0);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientRotate 3s linear infinite;
+}
+
+/* Body Styles */
 body {
   display: flex;
   align-items: center;

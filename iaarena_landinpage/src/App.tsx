@@ -2,18 +2,22 @@
 // Style CSS
 import './App.css'
 
-// Shadcn components
-import { Button } from "@/components/ui/button"
+// Import react router dom
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-const App = () => {
+// Import pages
+import Home from './pages/Home';
 
-
+export default function App() {
   return (
-    <div className="app flex flex-col items-center justify-center gap-2">
-      <h1 className='text-3xl font-bold underline'>Hello world!</h1>
-      <Button onClick={() => alert("Exit? Really??")} variant="destructive">Exit</Button>
-    </div>
+    <Router>
+      <Routes>
+        {/* 404 not found */}
+        <Route path="*" element={<h1>404 Not Found</h1>} />
+
+        {/* Home route */}
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;
