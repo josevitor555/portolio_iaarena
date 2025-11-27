@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Code2, Megaphone, Github, Linkedin, Twitter } from 'lucide-react';
 
 const TeamSection = () => {
@@ -6,7 +7,12 @@ const TeamSection = () => {
             <div className="bg-glow absolute top-1/2 left-1/2 -translate-x-1/2 w-96 h-96" style={{ backgroundColor: 'rgba(196, 154, 108, 0.08)' }}></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-                <div className="text-center max-w-3xl mx-auto mb-16">
+                <motion.div 
+                    className="text-center max-w-3xl mx-auto mb-16"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
                     <p className="text-sm font-medium mb-4" style={{ color: '#E7C7A0' }}>A Equipe</p>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight mb-6" style={{ fontFamily: "'Spectral', serif" }}>
                         Construído por criadores apaixonados
@@ -14,9 +20,14 @@ const TeamSection = () => {
                     <p className="text-lg" style={{ color: '#888888' }}>
                         Uma equipe pequena mas dedicada, comprometida em revolucionar a interação humano-IA.
                     </p>
-                </div>
+                </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+                <motion.div 
+                    className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                >
                     <div className="animated-border-card p-8 text-center transition-all hover:scale-105">
                         <div className="animated-bg-card rounded-xl p-6" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #E7C7A0, #C49A6C)' }}>
@@ -58,7 +69,7 @@ const TeamSection = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

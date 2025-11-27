@@ -18,41 +18,43 @@ import Footer from '../components/Footer';
 // Main component
 const Home = () => {
     return (
-        <div className='w-full'>
-
+        <div className='min-h-screen flex flex-col bg-background'>
             {/* Navigation component */}
             <Navigation />
-
-            {/* Hero Section */}
-            <HeroSection />
-
-            {/* Problem Section */}
-            <ProblemSection />
-
-            {/* Solution Section */}
-            <SolutionSection />
-
-            {/* Inovation Section */}
-            <InovationSection />
-
-            {/* Market Section */}
-            <MarketSection />
-
-            {/* Impact Section */}
-            <ImpactSection />
-
-            {/* MVP Section */}
-            <MVPSection />
-
-            {/* Team Section */}
-            <TeamSection />
-
-            {/* Pitch Video Section */}
-            <PicthVideoSection />
-
-            {/* CTA Section */}
-            <CTASection />
-
+            
+            {/* Main content wrapper */}
+            <div className='flex-1'>
+                {/* Hero Section */}
+                <HeroSection />
+                
+                {/* Problem Section */}
+                <ProblemSection />
+                
+                {/* Solution Section */}
+                <SolutionSection />
+                
+                {/* Inovation Section */}
+                <InovationSection />
+                
+                {/* Market Section */}
+                <MarketSection />
+                
+                {/* Impact Section */}
+                <ImpactSection />
+                
+                {/* MVP Section */}
+                <MVPSection />
+                
+                {/* Team Section */}
+                <TeamSection />
+                
+                {/* Pitch Video Section */}
+                <PicthVideoSection />
+                
+                {/* CTA Section */}
+                <CTASection />
+            </div>
+            
             {/* Footer */}
             <Footer />
         </div>

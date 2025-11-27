@@ -1,4 +1,3 @@
-
 // Style CSS
 import './App.css'
 
@@ -7,6 +6,23 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Import pages
 import Home from './pages/Home';
+
+// Initialize smooth scrolling after component mount
+setTimeout(() => {
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (this: HTMLAnchorElement, e: Event) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href') || '');
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+}, 0);
 
 export default function App() {
   return (

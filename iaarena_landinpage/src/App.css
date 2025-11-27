@@ -1,4 +1,15 @@
-/* Keyframe Animations */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* body {
+  background-color: hsl(var(--background));
+} */
+
 @keyframes gradientRotate {
   0% {
     background-position: 0% 50%;
@@ -37,12 +48,11 @@
   }
 }
 
-/* Animated Border Card */
 .animated-border-card {
   position: relative;
   background: #0D0D0D;
   border-radius: 1rem;
-  overflow: hidden;
+  overflow: clip;
 }
 
 .animated-border-card::before {
@@ -55,6 +65,7 @@
   background: conic-gradient(from 0deg, #E7C7A0, #C49A6C, #8C5A3C, #C49A6C, #E7C7A0);
   animation: borderRotate 4s linear infinite;
   z-index: 0;
+  will-change: transform;
 }
 
 .animated-border-card::after {
@@ -71,7 +82,6 @@
   z-index: 2;
 }
 
-/* Animated Background Card */
 .animated-bg-card {
   position: relative;
   overflow: hidden;
@@ -95,7 +105,6 @@
   z-index: 1;
 }
 
-/* Background Glow Effect */
 .bg-glow {
   position: absolute;
   border-radius: 50%;
@@ -103,7 +112,6 @@
   animation: bgPulse 4s ease-in-out infinite;
 }
 
-/* Animated Gradient Text */
 .animated-gradient-text {
   background: linear-gradient(90deg, #E7C7A0, #C49A6C, #8C5A3C, #C49A6C, #E7C7A0);
   background-size: 200% auto;
@@ -115,4 +123,129 @@
 
 ::-webkit-scrollbar {
   width: 0;
+}
+
+.pitch-section {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+.pitch-subtitle {
+  font-size: .9rem;
+  margin-bottom: .8rem;
+  color: #E7C7A0;
+  font-weight: 500;
+}
+
+.pitch-title {
+  font-family: 'Spectral', serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 500;
+  color: white;
+  letter-spacing: -0.5px;
+}
+
+
+.pitch-wrapper {
+  position: relative;
+  max-width: 950px;
+}
+
+.pitch-glow {
+  position: absolute;
+  inset: -100px;
+  background: radial-gradient(circle, rgba(231, 199, 160, 0.18), transparent 70%);
+  filter: blur(55px);
+  opacity: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pitch-card {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 1.5rem;
+  overflow: visible;
+  /* importante */
+  z-index: 2;
+  transition: transform .3s;
+}
+
+.pitch-card:hover {
+  transform: scale(1.01);
+}
+
+.pitch-bg {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg,
+      rgba(231, 199, 160, 0.2),
+      rgba(196, 154, 108, 0.08),
+      rgba(140, 90, 60, 0.15));
+  background-size: 180% 180%;
+  animation: pitchGradientMove 6s ease-in-out infinite;
+  z-index: 1;
+}
+
+.pitch-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pitch-play {
+  width: 98px;
+  height: 98px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(231, 199, 160, 0.1);
+  border: 1px solid rgba(231, 199, 160, 0.5);
+  box-shadow: 0 0 25px rgba(231, 199, 160, 0.25);
+  transition: transform .3s ease;
+}
+
+.pitch-play-inner {
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  background-color: #E7C7A0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pitch-play-inner svg {
+  color: #0D0D0D;
+}
+
+/* Label */
+.pitch-label {
+  margin-top: 1.6rem;
+  font-size: .78rem;
+  color: #E7C7A0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .08rem;
+}
+
+@keyframes pitchGradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Download, Mail, Github, Twitter, Linkedin, MessageCircle } from 'lucide-react';
 
 const CTASection = () => {
@@ -9,7 +10,12 @@ const CTASection = () => {
                     <div className="bg-glow absolute top-0 right-0 w-96 h-96" style={{ backgroundColor: 'rgba(231, 199, 160, 0.15)' }}></div>
                     <div className="bg-glow absolute bottom-0 left-0 w-96 h-96" style={{ backgroundColor: 'rgba(196, 154, 108, 0.15)', animationDelay: '-2s' }}></div>
 
-                    <div className="relative z-10 max-w-2xl mx-auto text-center">
+                    <motion.div 
+                        className="relative z-10 max-w-2xl mx-auto text-center"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                    >
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight mb-6" style={{ fontFamily: "'Spectral', serif" }}>
                             Pronto para explorar o futuro da interação com IA?
                         </h2>
@@ -17,7 +23,12 @@ const CTASection = () => {
                             Obtenha nosso sumário executivo, documentação técnica ou agende uma chamada com nossa equipe.
                         </p>
 
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <motion.div 
+                            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.1 }}
+                        >
                             <a href="#" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-medium rounded-xl transition-all hover:scale-105" style={{ backgroundColor: '#E7C7A0', color: '#0D0D0D' }}>
                                 <Download className="w-5 h-5" />
                                 Baixar PDF do Pitch
@@ -26,9 +37,14 @@ const CTASection = () => {
                                 <Mail className="w-5 h-5" />
                                 Fale Conosco
                             </a>
-                        </div>
+                        </motion.div>
 
-                        <div className="flex items-center justify-center gap-6 mt-8">
+                        <motion.div 
+                            className="flex items-center justify-center gap-6 mt-8"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                        >
                             <a href="#" className="transition-colors hover:text-white" style={{ color: '#555555' }}>
                                 <Github className="w-6 h-6" />
                             </a>
@@ -41,8 +57,8 @@ const CTASection = () => {
                             <a href="https://wa.me/1234567890" className="transition-colors hover:text-white" style={{ color: '#555555' }}>
                                 <MessageCircle className="w-6 h-6" />
                             </a>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                 </div>
             </div>
         </section>

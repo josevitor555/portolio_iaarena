@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Scale, Trophy, Blocks, Radio } from 'lucide-react';
 
 const InovationSection = () => {
@@ -6,7 +7,12 @@ const InovationSection = () => {
             <div className="bg-glow absolute top-1/4 right-1/4 w-72 h-72" style={{ backgroundColor: 'rgba(231, 199, 160, 0.08)' }}></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-                <div className="text-center max-w-3xl mx-auto mb-16">
+                <motion.div 
+                    className="text-center max-w-3xl mx-auto mb-16"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
                     <p className="text-sm font-medium mb-4" style={{ color: '#E7C7A0' }}>Inovação</p>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight mb-6" style={{ fontFamily: "'Spectral', serif" }}>
                         O que nos torna diferentes
@@ -14,9 +20,14 @@ const InovationSection = () => {
                     <p className="text-lg" style={{ color: '#888888' }}>
                         Aspectos inovadores oficialmente reconhecidos que diferenciam o IAArena das soluções existentes.
                     </p>
-                </div>
+                </motion.div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <motion.div 
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                >
                     <div className="animated-border-card text-center p-6 transition-all hover:scale-105">
                         <div className="animated-bg-card rounded-xl p-6" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4" style={{ background: 'linear-gradient(135deg, rgba(231, 199, 160, 0.15), rgba(196, 154, 108, 0.15))', border: '1px solid rgba(231, 199, 160, 0.3)' }}>
@@ -56,7 +67,7 @@ const InovationSection = () => {
                             <p className="text-sm" style={{ color: '#888888' }}>Geração ao vivo em texto, imagem, áudio e vídeo</p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

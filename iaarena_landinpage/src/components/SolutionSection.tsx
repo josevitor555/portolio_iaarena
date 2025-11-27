@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import {
     Swords,
     Sparkles,
@@ -19,7 +20,12 @@ const SolutionSection = () => {
             <div className="bg-glow absolute bottom-0 right-0 w-64 h-64" style={{ backgroundColor: 'rgba(196, 154, 108, 0.1)', animationDelay: '-2s' }}></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-                <div className="text-center max-w-3xl mx-auto mb-16">
+                <motion.div 
+                    className="text-center max-w-3xl mx-auto mb-16"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
                     <p className="text-sm font-medium mb-4" style={{ color: '#E7C7A0' }}>A Solução</p>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight mb-6" style={{ fontFamily: "'Spectral', serif" }}>
                         Dois modos poderosos.<br />Infinitas possibilidades.
@@ -27,9 +33,14 @@ const SolutionSection = () => {
                     <p className="text-lg" style={{ color: '#888888' }}>
                         IAArena combina debates estruturados de IA com criação multimodal em tempo real em uma única plataforma integrada.
                     </p>
-                </div>
+                </motion.div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <motion.div 
+                    className="grid grid-cols-1 lg:grid-cols-2 gap-8"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                >
                     {/* Arena Mode */}
                     <div className="animated-border-card overflow-hidden group transition-all hover:scale-[1.02]">
                         <div className="animated-bg-card p-8" style={{ backgroundColor: '#0D0D0D' }}>
@@ -105,10 +116,15 @@ const SolutionSection = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Tech Stack */}
-                <div className="mt-16 text-center">
+                <motion.div 
+                    className="mt-16 text-center"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                >
                     <p className="text-sm mb-6" style={{ color: '#555555' }}>Impulsionado por tecnologia moderna</p>
                     <div className="flex flex-wrap items-center justify-center gap-8">
                         <div className="flex items-center gap-2" style={{ color: '#888888' }}>
@@ -128,7 +144,7 @@ const SolutionSection = () => {
                             <span className="text-sm">Cloud Native</span>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

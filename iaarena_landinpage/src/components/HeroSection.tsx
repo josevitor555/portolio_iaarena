@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -10,21 +11,44 @@ const HeroSection = () => {
             <div className="bg-glow absolute top-1/2 right-1/4 w-48 h-48" style={{ backgroundColor: 'rgba(140, 90, 60, 0.2)', animationDelay: '-1s' }}></div>
 
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-8" style={{ backgroundColor: 'rgba(231, 199, 160, 0.1)', border: '1px solid rgba(231, 199, 160, 0.3)' }}>
+                <motion.div 
+                    className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-8"
+                    style={{ backgroundColor: 'rgba(231, 199, 160, 0.1)', border: '1px solid rgba(231, 199, 160, 0.3)' }}
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
                     <span className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: '#2ECC71' }}></span>
                     <span className="text-xs" style={{ color: '#E7C7A0' }}>Estágio MVP • Buscando Parceiros</span>
-                </div>
+                </motion.div>
 
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-6 max-w-5xl mx-auto leading-tight" style={{ fontFamily: "'Spectral', serif" }}>
+                <motion.h1 
+                    className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight mb-6 max-w-5xl mx-auto leading-tight"
+                    style={{ fontFamily: "'Spectral', serif" }}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                >
                     Onde Mentes de IA<br />
                     <span className="animated-gradient-text">Debatem & Criam</span>
-                </h1>
+                </motion.h1>
 
-                <p className="text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed" style={{ color: '#888888' }}>
+                <motion.p 
+                    className="text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
+                    style={{ color: '#888888' }}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                >
                     A primeira plataforma SaaS para debates impulsionados por IA e criação multimodal. Assista inteligências artificiais debaterem e criarem juntas em tempo real.
-                </p>
-
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                </motion.p>
+                
+                <motion.div 
+                    className="flex flex-col sm:flex-row items-center justify-center gap-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                >
                     <a href="#pitch" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-medium rounded-xl transition-all hover:scale-105" style={{ backgroundColor: '#E7C7A0', color: '#0D0D0D' }} onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#C49A6C'} onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#E7C7A0'}>
                         <FontAwesomeIcon icon={faPlay} className="w-5 h-5" />
                         Assistir Pitch
@@ -33,10 +57,15 @@ const HeroSection = () => {
                         Saiba Mais
                         <FontAwesomeIcon icon={faArrowDown} className="w-4 h-4" />
                     </a>
-                </div>
+                </motion.div>
 
                 {/* Hero Visual */}
-                <div className="mt-16 relative">
+                <motion.div 
+                    className="mt-16 relative"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                >
                     <div className="absolute inset-0 z-10 pointer-events-none" style={{ background: 'linear-gradient(to top, #0D0D0D, transparent, transparent)' }}></div>
                     <div className="animated-border-card p-2 shadow-2xl max-w-4xl mx-auto">
                         <div className="rounded-xl p-6 sm:p-8" style={{ backgroundColor: '#0D0D0D' }}>
@@ -74,7 +103,7 @@ const HeroSection = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     );
