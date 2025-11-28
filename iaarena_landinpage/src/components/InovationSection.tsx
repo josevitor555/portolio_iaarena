@@ -13,7 +13,7 @@ const InovationSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <p className="text-sm font-medium mb-4" style={{ color: '#E7C7A0' }}>Inovação</p>
+                    <p className="text-2xl font-medium mb-4" style={{ color: '#E7C7A0' }}>Inovação</p>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight mb-6" style={{ fontFamily: "'Spectral', serif" }}>
                         O que nos torna diferentes
                     </h2>
@@ -28,43 +28,43 @@ const InovationSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                    <div className="animated-border-card text-center p-6 transition-all hover:scale-105">
-                        <div className="animated-bg-card rounded-xl p-6" style={{ backgroundColor: '#0D0D0D' }}>
+                    <div className="animated-border-card text-center p-6 transition-all hover:scale-105 h-full">
+                        <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4" style={{ background: 'linear-gradient(135deg, rgba(231, 199, 160, 0.15), rgba(196, 154, 108, 0.15))', border: '1px solid rgba(231, 199, 160, 0.3)' }}>
                                 <Scale className="w-8 h-8" style={{ color: '#E7C7A0' }} />
                             </div>
                             <h3 className="text-lg font-medium mb-2" style={{ fontFamily: "'Spectral', serif" }}>Debates de IA Avaliados por Humanos</h3>
-                            <p className="text-sm" style={{ color: '#888888' }}>Sistema único de julgamento onde humanos avaliam argumentos de IA</p>
+                            <p className="text-base" style={{ color: '#888888' }}>Sistema único de julgamento onde humanos avaliam argumentos de IA</p>
                         </div>
                     </div>
 
-                    <div className="animated-border-card text-center p-6 transition-all hover:scale-105">
-                        <div className="animated-bg-card rounded-xl p-6" style={{ backgroundColor: '#0D0D0D' }}>
+                    <div className="animated-border-card text-center p-6 transition-all hover:scale-105 h-full">
+                        <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4" style={{ background: 'linear-gradient(135deg, rgba(196, 154, 108, 0.15), rgba(140, 90, 60, 0.15))', border: '1px solid rgba(196, 154, 108, 0.3)' }}>
                                 <Trophy className="w-8 h-8" style={{ color: '#C49A6C' }} />
                             </div>
                             <h3 className="text-lg font-medium mb-2" style={{ fontFamily: "'Spectral', serif" }}>Gamificação & Métricas</h3>
-                            <p className="text-sm" style={{ color: '#888888' }}>Sistemas proprietários de pontuação e engajamento</p>
+                            <p className="text-base" style={{ color: '#888888' }}>Sistemas proprietários de pontuação e engajamento</p>
                         </div>
                     </div>
 
-                    <div className="animated-border-card text-center p-6 transition-all hover:scale-105">
-                        <div className="animated-bg-card rounded-xl p-6" style={{ backgroundColor: '#0D0D0D' }}>
+                    <div className="animated-border-card text-center p-6 transition-all hover:scale-105 h-full">
+                        <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4" style={{ background: 'linear-gradient(135deg, rgba(46, 204, 113, 0.15), rgba(39, 174, 96, 0.15))', border: '1px solid rgba(46, 204, 113, 0.3)' }}>
                                 <Blocks className="w-8 h-8" style={{ color: '#2ECC71' }} />
                             </div>
                             <h3 className="text-lg font-medium mb-2" style={{ fontFamily: "'Spectral', serif" }}>Arquitetura Modular</h3>
-                            <p className="text-sm" style={{ color: '#888888' }}>Design escalável para implantação empresarial</p>
+                            <p className="text-base" style={{ color: '#888888' }}>Design escalável para implantação empresarial</p>
                         </div>
                     </div>
 
-                    <div className="animated-border-card text-center p-6 transition-all hover:scale-105">
-                        <div className="animated-bg-card rounded-xl p-6" style={{ backgroundColor: '#0D0D0D' }}>
+                    <div className="animated-border-card text-center p-6 transition-all hover:scale-105 h-full">
+                        <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4" style={{ background: 'linear-gradient(135deg, rgba(140, 90, 60, 0.15), rgba(107, 68, 35, 0.15))', border: '1px solid rgba(140, 90, 60, 0.3)' }}>
                                 <Radio className="w-8 h-8" style={{ color: '#8C5A3C' }} />
                             </div>
                             <h3 className="text-lg font-medium mb-2" style={{ fontFamily: "'Spectral', serif" }}>Multimodalidade em Tempo Real</h3>
-                            <p className="text-sm" style={{ color: '#888888' }}>Geração ao vivo em texto, imagem, áudio e vídeo</p>
+                            <p className="text-base" style={{ color: '#888888' }}>Geração ao vivo em texto, imagem, áudio e vídeo</p>
                         </div>
                     </div>
                 </motion.div>

@@ -13,7 +13,7 @@ const MarketSection = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <p className="text-sm font-medium mb-4" style={{ color: '#E7C7A0' }}>Oportunidade de Mercado</p>
+                        <p className="text-2xl font-medium mb-4" style={{ color: '#E7C7A0' }}>Oportunidade de Mercado</p>
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight mb-6" style={{ fontFamily: "'Spectral', serif" }}>
                             Um mercado em rápida expansão
                         </h2>
@@ -60,26 +60,26 @@ const MarketSection = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.1 }}
                     >
-                        <div className="animated-border-card p-6 transition-all hover:scale-105">
-                            <div className="animated-bg-card rounded-xl p-4" style={{ backgroundColor: '#0D0D0D' }}>
+                        <div className="animated-border-card p-6 transition-all hover:scale-105 h-full">
+                            <div className="animated-bg-card rounded-xl p-4 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                                 <p className="text-4xl sm:text-5xl font-medium tracking-tight" style={{ fontFamily: "'Spectral', serif", color: '#E7C7A0' }}>$20B</p>
                                 <p className="text-sm mt-2" style={{ color: '#888888' }}>Mercado de IA na Educação até 2027</p>
                             </div>
                         </div>
-                        <div className="animated-border-card p-6 transition-all hover:scale-105">
-                            <div className="animated-bg-card rounded-xl p-4" style={{ backgroundColor: '#0D0D0D' }}>
+                        <div className="animated-border-card p-6 transition-all hover:scale-105 h-full">
+                            <div className="animated-bg-card rounded-xl p-4 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                                 <p className="text-4xl sm:text-5xl font-medium tracking-tight" style={{ fontFamily: "'Spectral', serif", color: '#C49A6C' }}>45%</p>
                                 <p className="text-sm mt-2" style={{ color: '#888888' }}>Taxa de Crescimento Anual</p>
                             </div>
                         </div>
-                        <div className="animated-border-card p-6 transition-all hover:scale-105">
-                            <div className="animated-bg-card rounded-xl p-4" style={{ backgroundColor: '#0D0D0D' }}>
+                        <div className="animated-border-card p-6 transition-all hover:scale-105 h-full">
+                            <div className="animated-bg-card rounded-xl p-4 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                                 <p className="text-4xl sm:text-5xl font-medium tracking-tight" style={{ fontFamily: "'Spectral', serif", color: '#8C5A3C' }}>1.5B</p>
                                 <p className="text-sm mt-2" style={{ color: '#888888' }}>Estudantes Globais</p>
                             </div>
                         </div>
-                        <div className="animated-border-card p-6 transition-all hover:scale-105">
-                            <div className="animated-bg-card rounded-xl p-4" style={{ backgroundColor: '#0D0D0D' }}>
+                        <div className="animated-border-card p-6 transition-all hover:scale-105 h-full">
+                            <div className="animated-bg-card rounded-xl p-4 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                                 <p className="text-4xl sm:text-5xl font-medium tracking-tight" style={{ fontFamily: "'Spectral', serif", color: '#E7C7A0' }}>85%</p>
                                 <p className="text-sm mt-2" style={{ color: '#888888' }}>Querem Ferramentas de Aprendizado de IA</p>
                             </div>

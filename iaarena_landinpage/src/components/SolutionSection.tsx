@@ -26,7 +26,7 @@ const SolutionSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <p className="text-sm font-medium mb-4" style={{ color: '#E7C7A0' }}>A Solução</p>
+                    <p className="text-2xl font-medium mb-4" style={{ color: '#E7C7A0' }}>A Solução</p>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight mb-6" style={{ fontFamily: "'Spectral', serif" }}>
                         Dois modos poderosos.<br />Infinitas possibilidades.
                     </h2>
@@ -120,28 +120,32 @@ const SolutionSection = () => {
 
                 {/* Tech Stack */}
                 <motion.div 
-                    className="mt-16 text-center"
+                    className="mt-16 text-center justify-center flex flex-col items-center"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                    <p className="text-sm mb-6" style={{ color: '#555555' }}>Impulsionado por tecnologia moderna</p>
-                    <div className="flex flex-wrap items-center justify-center gap-8">
+                    <p className="text-2xl mb-6" style={{ color: '#555555' }}>Impulsionado por tecnologia moderna</p>
+                    <div className="rounded-full px-6 py-4 max-w-max flex flex-wrap items-center justify-center gap-8" style={{ 
+                        backgroundColor: 'rgba(255, 255, 255, 0.05)',
+                        backdropFilter: 'blur(10px)',
+                        border: '1px solid rgba(255, 255, 255, 0.1)'
+                    }}>
                         <div className="flex items-center gap-2" style={{ color: '#888888' }}>
                             <Zap className="w-5 h-5" />
-                            <span className="text-sm">WebSockets</span>
+                            <span className="text-base">WebSockets</span>
                         </div>
                         <div className="flex items-center gap-2" style={{ color: '#888888' }}>
                             <Brain className="w-5 h-5" />
-                            <span className="text-sm">LLM APIs</span>
+                            <span className="text-base">LLM APIs</span>
                         </div>
                         <div className="flex items-center gap-2" style={{ color: '#888888' }}>
                             <Database className="w-5 h-5" />
-                            <span className="text-sm">Supabase</span>
+                            <span className="text-base">Supabase</span>
                         </div>
                         <div className="flex items-center gap-2" style={{ color: '#888888' }}>
                             <Cloud className="w-5 h-5" />
-                            <span className="text-sm">Cloud Native</span>
+                            <span className="text-base">Cloud Native</span>
                         </div>
                     </div>
                 </motion.div>

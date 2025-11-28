@@ -13,7 +13,7 @@ const TeamSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <p className="text-sm font-medium mb-4" style={{ color: '#E7C7A0' }}>A Equipe</p>
+                    <p className="text-2xl font-medium mb-4" style={{ color: '#E7C7A0' }}>A Equipe</p>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight mb-6" style={{ fontFamily: "'Spectral', serif" }}>
                         Construído por criadores apaixonados
                     </h2>
@@ -28,8 +28,8 @@ const TeamSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                    <div className="animated-border-card p-8 text-center transition-all hover:scale-105">
-                        <div className="animated-bg-card rounded-xl p-6" style={{ backgroundColor: '#0D0D0D' }}>
+                    <div className="animated-border-card p-8 text-center transition-all hover:scale-105 h-full">
+                        <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #E7C7A0, #C49A6C)' }}>
                                 <Code2 className="w-10 h-10 text-white" />
                             </div>
@@ -49,8 +49,8 @@ const TeamSection = () => {
                         </div>
                     </div>
 
-                    <div className="animated-border-card p-8 text-center transition-all hover:scale-105">
-                        <div className="animated-bg-card rounded-xl p-6" style={{ backgroundColor: '#0D0D0D' }}>
+                    <div className="animated-border-card p-8 text-center transition-all hover:scale-105 h-full">
+                        <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #C49A6C, #8C5A3C)' }}>
                                 <Megaphone className="w-10 h-10 text-white" />
                             </div>
