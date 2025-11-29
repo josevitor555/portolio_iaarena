@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Download, Mail, Github, Twitter, Linkedin, MessageCircle } from 'lucide-react';
+import { Mail, Github, Twitter, Linkedin, MessageCircle, FileText } from 'lucide-react';
 
 const CTASection = () => {
     return (
@@ -29,9 +29,9 @@ const CTASection = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.1 }}
                         >
-                            <a href="#" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-medium rounded-xl transition-all hover:scale-105" style={{ backgroundColor: '#E7C7A0', color: '#0D0D0D' }}>
-                                <Download className="w-5 h-5" />
-                                Baixar PDF do Pitch
+                            <a href="/Especificacao-de-Requisitos-de-Software-IAArena.pdf" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-medium rounded-xl transition-all hover:scale-105" style={{ backgroundColor: '#E7C7A0', color: '#0D0D0D' }}>
+                                <FileText className="w-5 h-5" />
+                                Baixar Especificação Técnica
                             </a>
                             <a href="mailto:contact@iaarena.io" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-medium rounded-xl transition-colors border hover:bg-white/10" style={{ color: '#FFFFFF', backgroundColor: 'rgba(255,255,255,0.05)', borderColor: '#444444' }}>
                                 <Mail className="w-5 h-5" />
