@@ -126,7 +126,7 @@ const SolutionSection = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
                     <p className="text-2xl mb-6" style={{ color: '#555555' }}>Impulsionado por tecnologia moderna</p>
-                    <div className="rounded-full px-6 py-4 max-w-max flex flex-wrap items-center justify-center gap-8" style={{ 
+                    <div className="rounded-lg px-6 py-4 max-w-max flex flex-wrap items-center justify-center gap-8" style={{ 
                         backgroundColor: 'rgba(255, 255, 255, 0.05)',
                         backdropFilter: 'blur(10px)',
                         border: '1px solid rgba(255, 255, 255, 0.1)'

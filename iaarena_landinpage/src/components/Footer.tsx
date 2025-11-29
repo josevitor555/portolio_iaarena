@@ -23,7 +23,7 @@ const Footer = () => {
                     </motion.div>
 
                     <motion.p 
-                        className="text-sm"
+                        className="text-base"
                         style={{ color: '#555555' }}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -38,9 +38,9 @@ const Footer = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
                     >
-                        <a href="#" className="text-sm transition-colors hover:text-white" style={{ color: '#555555' }}>Privacidade</a>
-                        <a href="#" className="text-sm transition-colors hover:text-white" style={{ color: '#555555' }}>Termos</a>
-                        <a href="#" className="text-sm transition-colors hover:text-white" style={{ color: '#555555' }}>Contato</a>
+                        <a href="#" className="text-base transition-colors hover:text-white" style={{ color: '#555555' }}>Privacidade</a>
+                        <a href="#" className="text-base transition-colors hover:text-white" style={{ color: '#555555' }}>Termos</a>
+                        <a href="#" className="text-base transition-colors hover:text-white" style={{ color: '#555555' }}>Contato</a>
                     </motion.div>
                 </motion.div>
             </div>

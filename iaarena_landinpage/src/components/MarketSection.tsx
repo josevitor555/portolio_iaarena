@@ -18,7 +18,9 @@ const MarketSection = () => {
                             Um mercado em rápida expansão
                         </h2>
                         <p className="text-lg mb-8 leading-relaxed" style={{ color: '#888888' }}>
-                            O mercado global de IA na educação está projetado para atingir US$ 20 bilhões até 2027. O IAArena está posicionado na interseção de educação, criatividade e tecnologia de IA.
+                            O mercado de IA na educação na América Latina deverá atingir US$ 0,5 bilhão em 2025. A partir daí, espera-se que cresça a uma taxa composta de crescimento anual de 33,5%, alcançando US$ 2,1 bilhões em 2030.
+                            <br /><br />
+                            Fonte: Resourcera, 2025.
                         </p>
 
                         <div className="space-y-4">
@@ -28,7 +30,7 @@ const MarketSection = () => {
                                 </div>
                                 <div>
                                     <p className="font-medium">Universidades e Escolas</p>
-                                    <p className="text-sm" style={{ color: '#888888' }}>Instituições educacionais buscando ferramentas inovadoras de IA</p>
+                                    <p className="text-base" style={{ color: '#888888' }}>Instituições educacionais buscando ferramentas inovadoras de IA</p>
                                 </div>
                             </div>
 
@@ -38,7 +40,7 @@ const MarketSection = () => {
                                 </div>
                                 <div>
                                     <p className="font-medium">Criadores de Conteúdo</p>
-                                    <p className="text-sm" style={{ color: '#888888' }}>Profissionais aproveitando a IA para conteúdo multimodal</p>
+                                    <p className="text-base" style={{ color: '#888888' }}>Profissionais aproveitando a IA para conteúdo multimodal</p>
                                 </div>
                             </div>
 
@@ -48,7 +50,7 @@ const MarketSection = () => {
                                 </div>
                                 <div>
                                     <p className="font-medium">Entusiastas de IA</p>
-                                    <p className="text-sm" style={{ color: '#888888' }}>Early adopters explorando capacidades de IA</p>
+                                    <p className="text-base" style={{ color: '#888888' }}>Early adopters explorando capacidades de IA</p>
                                 </div>
                             </div>
                         </div>
@@ -62,26 +64,26 @@ const MarketSection = () => {
                     >
                         <div className="animated-border-card p-6 transition-all hover:scale-105 h-full">
                             <div className="animated-bg-card rounded-xl p-4 h-full" style={{ backgroundColor: '#0D0D0D' }}>
-                                <p className="text-4xl sm:text-5xl font-medium tracking-tight" style={{ fontFamily: "'Spectral', serif", color: '#E7C7A0' }}>$20B</p>
-                                <p className="text-sm mt-2" style={{ color: '#888888' }}>Mercado de IA na Educação até 2027</p>
+                                <p className="text-4xl sm:text-5xl font-medium tracking-tight" style={{ fontFamily: "'Spectral', serif", color: '#E7C7A0' }}>$0,5B</p>
+                                <p className="text-base mt-2" style={{ color: '#888888' }}>Espera-se alcançar até 2025</p>
                             </div>
                         </div>
                         <div className="animated-border-card p-6 transition-all hover:scale-105 h-full">
                             <div className="animated-bg-card rounded-xl p-4 h-full" style={{ backgroundColor: '#0D0D0D' }}>
-                                <p className="text-4xl sm:text-5xl font-medium tracking-tight" style={{ fontFamily: "'Spectral', serif", color: '#C49A6C' }}>45%</p>
-                                <p className="text-sm mt-2" style={{ color: '#888888' }}>Taxa de Crescimento Anual</p>
+                                <p className="text-4xl sm:text-5xl font-medium tracking-tight" style={{ fontFamily: "'Spectral', serif", color: '#C49A6C' }}>$2,1B</p>
+                                <p className="text-base mt-2" style={{ color: '#888888' }}>Com taxa composta de crescimento anual de 33,5%. Espera-se alcançar $2,1 bilhões até 2030.</p>
                             </div>
                         </div>
                         <div className="animated-border-card p-6 transition-all hover:scale-105 h-full">
                             <div className="animated-bg-card rounded-xl p-4 h-full" style={{ backgroundColor: '#0D0D0D' }}>
-                                <p className="text-4xl sm:text-5xl font-medium tracking-tight" style={{ fontFamily: "'Spectral', serif", color: '#8C5A3C' }}>1.5B</p>
-                                <p className="text-sm mt-2" style={{ color: '#888888' }}>Estudantes Globais</p>
+                                <p className="text-4xl sm:text-5xl font-medium tracking-tight" style={{ fontFamily: "'Spectral', serif", color: '#8C5A3C' }}>$48M</p>
+                                <p className="text-base mt-2" style={{ color: '#888888' }}>A América Latina se destaca pela sua eficiência de crescimento, gerando aproximadamente US$ 48 milhões em receita adicional para cada 1% de CAGR.</p>
                             </div>
                         </div>
                         <div className="animated-border-card p-6 transition-all hover:scale-105 h-full">
                             <div className="animated-bg-card rounded-xl p-4 h-full" style={{ backgroundColor: '#0D0D0D' }}>
-                                <p className="text-4xl sm:text-5xl font-medium tracking-tight" style={{ fontFamily: "'Spectral', serif", color: '#E7C7A0' }}>85%</p>
-                                <p className="text-sm mt-2" style={{ color: '#888888' }}>Querem Ferramentas de Aprendizado de IA</p>
+                                <p className="text-4xl sm:text-5xl font-medium tracking-tight" style={{ fontFamily: "'Spectral', serif", color: '#C49A6C' }}>$32,27B</p>
+                                <p className="text-base mt-2" style={{ color: '#888888' }}>O mercado global de IA na educação deverá crescer de US$ 7,71 bilhões em 2025 para US$ 32,27 bilhões em 2030, expandindo a uma taxa composta de crescimento anual de 31,2%.</p>
                             </div>
                         </div>
                     </motion.div>

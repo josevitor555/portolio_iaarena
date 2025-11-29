@@ -7,7 +7,7 @@ const InovationSection = () => {
             <div className="bg-glow absolute top-1/4 right-1/4 w-72 h-72" style={{ backgroundColor: 'rgba(231, 199, 160, 0.08)' }}></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-                <motion.div 
+                <motion.div
                     className="text-center max-w-3xl mx-auto mb-16"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -22,7 +22,7 @@ const InovationSection = () => {
                     </p>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -50,11 +50,11 @@ const InovationSection = () => {
 
                     <div className="animated-border-card text-center p-6 transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
-                            <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4" style={{ background: 'linear-gradient(135deg, rgba(46, 204, 113, 0.15), rgba(39, 174, 96, 0.15))', border: '1px solid rgba(46, 204, 113, 0.3)' }}>
-                                <Blocks className="w-8 h-8" style={{ color: '#2ECC71' }} />
+                            <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4" style={{ background: 'linear-gradient(135deg, rgba(196, 154, 108, 0.15), rgba(140, 90, 60, 0.15))', border: '1px solid rgba(196, 154, 108, 0.3)' }}>
+                                <Blocks className="w-8 h-8" style={{ color: '#C49A6C' }} />
                             </div>
-                            <h3 className="text-lg font-medium mb-2" style={{ fontFamily: "'Spectral', serif" }}>Arquitetura Modular</h3>
-                            <p className="text-base" style={{ color: '#888888' }}>Design escalável para implantação empresarial</p>
+                            <h3 className="text-lg font-medium mb-2" style={{ fontFamily: "'Spectral', serif" }}>Gamificação & Métricas</h3>
+                            <p className="text-base" style={{ color: '#888888' }}>Sistemas proprietários de pontuação e engajamento</p>
                         </div>
                     </div>
 
