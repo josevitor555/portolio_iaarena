@@ -29,7 +29,7 @@ const Footer = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
-                        © 2024 IAArena. Todos os direitos reservados.
+                        © 2025 IAArena. Todos os direitos reservados.
                     </motion.p>
 
                     <motion.div 

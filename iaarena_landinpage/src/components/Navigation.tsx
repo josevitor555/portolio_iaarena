@@ -27,6 +27,7 @@ const Navigation = () => {
                         <a href="#solution" className="text-sm transition-colors" style={{ color: '#888888' }} onMouseOver={(e) => e.currentTarget.style.color = '#FFFFFF'} onMouseOut={(e) => e.currentTarget.style.color = '#888888'}>Solução</a>
                         <a href="#innovation" className="text-sm transition-colors" style={{ color: '#888888' }} onMouseOver={(e) => e.currentTarget.style.color = '#FFFFFF'} onMouseOut={(e) => e.currentTarget.style.color = '#888888'}>Inovação</a>
                         <a href="#team" className="text-sm transition-colors" style={{ color: '#888888' }} onMouseOver={(e) => e.currentTarget.style.color = '#FFFFFF'} onMouseOut={(e) => e.currentTarget.style.color = '#888888'}>Equipe</a>
+                        <a target='_blank' href="https://www.youtube.com/@IAArena-b8b" className="text-sm transition-colors" style={{ color: '#888888' }} onMouseOver={(e) => e.currentTarget.style.color = '#FFFFFF'} onMouseOut={(e) => e.currentTarget.style.color = '#888888'}>Youtube Canal</a>
                     </motion.div>
                     
                     <motion.div 
