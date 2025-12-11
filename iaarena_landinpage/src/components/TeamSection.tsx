@@ -28,7 +28,7 @@ const TeamSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                    <div className="animated-border-card p-8 text-center transition-all hover:scale-105 h-full">
+                    <div className="p-8 text-center transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #E7C7A0, #C49A6C)' }}>
                                 <img 
@@ -54,7 +54,7 @@ const TeamSection = () => {
                         </div>
                     </div>
 
-                    <div className="animated-border-card p-8 text-center transition-all hover:scale-105 h-full">
+                    <div className="p-8 text-center transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #C49A6C, #8C5A3C)' }}>
                                 <img 
@@ -77,7 +77,7 @@ const TeamSection = () => {
                         </div>
                     </div>
 
-                    <div className="animated-border-card p-8 text-center transition-all hover:scale-105 h-full">
+                    <div className="p-8 text-center transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #C49A6C, #8C5A3C)' }}>
                                 <img 
@@ -100,7 +100,7 @@ const TeamSection = () => {
                         </div>
                     </div>
 
-                    <div className="animated-border-card p-8 text-center transition-all hover:scale-105 h-full">
+                    <div className="p-8 text-center transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #C49A6C, #8C5A3C)' }}>
                                 {/* Substituído o ícone Megaphone por uma imagem */}

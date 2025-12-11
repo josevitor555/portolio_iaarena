@@ -5,12 +5,27 @@ import { faPlay, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 const HeroSection = () => {
     return (
         <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+            {/* Background com a logo do IAArena */}
+            <div className="absolute inset-0 z-0">
+                <div 
+                    className="absolute inset-0 bg-repeat opacity-10"
+                    style={{ 
+                        backgroundImage: "url('./public/iaarena_logo-removebg-preview.png')",
+                        backgroundSize: '740px',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                    }}
+                ></div>
+                {/* Overlay para escurecer o fundo e destacar os elementos */}
+                {/* <div className="absolute inset-0 bg-black bg-opacity-70"></div> */}
+            </div>
+            
             <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at center top, rgba(231, 199, 160, 0.08) 0%, transparent 50%)' }}></div>
             <div className="bg-glow absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96" style={{ backgroundColor: 'rgba(196, 154, 108, 0.2)' }}></div>
             <div className="bg-glow absolute top-1/3 left-1/4 w-64 h-64" style={{ backgroundColor: 'rgba(231, 199, 160, 0.15)', animationDelay: '-2s' }}></div>
             <div className="bg-glow absolute top-1/2 right-1/4 w-48 h-48" style={{ backgroundColor: 'rgba(140, 90, 60, 0.2)', animationDelay: '-1s' }}></div>
 
-            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center z-10">
                 <motion.div 
                     className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-8"
                     style={{ backgroundColor: 'rgba(231, 199, 160, 0.1)', border: '1px solid rgba(231, 199, 160, 0.3)' }}

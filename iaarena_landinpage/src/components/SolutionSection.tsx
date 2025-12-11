@@ -42,7 +42,7 @@ const SolutionSection = () => {
                     transition={{ duration: 0.5, delay: 0.1 }}
                 >
                     {/* Arena Mode */}
-                    <div className="animated-border-card overflow-hidden group transition-all hover:scale-[1.02]">
+                    <div className="overflow-hidden group transition-all hover:scale-[1.02]">
                         <div className="animated-bg-card p-8" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-6" style={{ backgroundColor: 'rgba(231, 199, 160, 0.1)', border: '1px solid rgba(231, 199, 160, 0.3)' }}>
                                 <Swords className="w-4 h-4" style={{ color: '#E7C7A0' }} />
@@ -79,7 +79,7 @@ const SolutionSection = () => {
                     </div>
 
                     {/* Creative Mode */}
-                    <div className="animated-border-card overflow-hidden group transition-all hover:scale-[1.02]">
+                    <div className="overflow-hidden group transition-all hover:scale-[1.02]">
                         <div className="animated-bg-card p-8" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-6" style={{ backgroundColor: 'rgba(196, 154, 108, 0.1)', border: '1px solid rgba(196, 154, 108, 0.3)' }}>
                                 <Sparkles className="w-4 h-4" style={{ color: '#C49A6C' }} />
