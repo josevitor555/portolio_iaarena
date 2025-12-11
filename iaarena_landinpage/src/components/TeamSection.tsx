@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Code2, Megaphone, Github, Linkedin, Twitter } from 'lucide-react';
+import { Github, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
 
 const TeamSection = () => {
     return (
@@ -7,7 +7,7 @@ const TeamSection = () => {
             <div className="bg-glow absolute top-1/2 left-1/2 -translate-x-1/2 w-96 h-96" style={{ backgroundColor: 'rgba(196, 154, 108, 0.08)' }}></div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-                <motion.div 
+                <motion.div
                     className="text-center max-w-3xl mx-auto mb-16"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -22,8 +22,8 @@ const TeamSection = () => {
                     </p>
                 </motion.div>
 
-                <motion.div 
-                    className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto"
+                <motion.div
+                    className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
@@ -31,18 +31,22 @@ const TeamSection = () => {
                     <div className="animated-border-card p-8 text-center transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #E7C7A0, #C49A6C)' }}>
-                                <Code2 className="w-10 h-10 text-white" />
+                                <img 
+                                    src="./public/jose_vitor.jpeg" 
+                                    alt="Menbro 1 (proponente)" 
+                                    className="w-24 h-24 rounded-full object-cover"
+                                />
                             </div>
-                            <h3 className="text-xl font-medium mb-1" style={{ fontFamily: "'Spectral', serif" }}>Líder Técnico</h3>
-                            <p className="text-sm mb-4" style={{ color: '#E7C7A0' }}>Co-Fundador & Desenvolvedor</p>
-                            <p className="text-sm leading-relaxed" style={{ color: '#888888' }}>
-                                Desenvolvedor full-stack com experiência em integração de IA, sistemas em tempo real e arquitetura escalável.
+                            <h3 className="text-xl font-medium mb-1" style={{ fontFamily: "'Spectral', serif" }}>José Vitor (Proponente)</h3>
+                            <p className="text-sm mb-4" style={{ color: '#E7C7A0' }}>Fundador & Desenvolvedor</p>
+                            <p className="text-base leading-relaxed" style={{ color: '#888888' }}>
+                                Fundador e desenvolvedor com experiência em criar soluções tecnológicas inovadoras e escaláveis.
                             </p>
                             <div className="flex items-center justify-center gap-4 mt-6">
-                                <a href="#" className="transition-colors hover:text-white" style={{ color: '#555555' }}>
+                                <a target='_blank' href="https://github.com/josevitor555" className="transition-colors hover:text-white" style={{ color: '#555555' }}>
                                     <Github className="w-5 h-5" />
                                 </a>
-                                <a href="#" className="transition-colors hover:text-white" style={{ color: '#555555' }}>
+                                <a target='_blank' href="https://www.linkedin.com/in/jos%C3%A9-vitor-sousa2003" className="transition-colors hover:text-white" style={{ color: '#555555' }}>
                                     <Linkedin className="w-5 h-5" />
                                 </a>
                             </div>
@@ -52,11 +56,60 @@ const TeamSection = () => {
                     <div className="animated-border-card p-8 text-center transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #C49A6C, #8C5A3C)' }}>
-                                <Megaphone className="w-10 h-10 text-white" />
+                                <img 
+                                    src="/public/allan_macedo.png"
+                                    alt="Líder de Marketing"
+                                    className="w-24 h-24 rounded-full object-cover"
+                                />
                             </div>
-                            <h3 className="text-xl font-medium mb-1" style={{ fontFamily: "'Spectral', serif" }}>Líder de Marketing</h3>
+                            <h3 className="text-xl font-medium mb-1" style={{ fontFamily: "'Spectral', serif" }}>Allan Macedo</h3>
                             <p className="text-sm mb-4" style={{ color: '#C49A6C' }}>Co-Fundador & Comunicações</p>
-                            <p className="text-sm leading-relaxed" style={{ color: '#888888' }}>
+                            <p className="text-base leading-relaxed" style={{ color: '#888888' }}>
+                                Profissional de Comunicação e Marketing Digital, atuando como influenciador e infoprodutor, com ampla experiência em validação de mercado, engajamento de público e estratégias de crescimento digital.
+                            </p>
+                            <div className="flex items-center justify-center gap-4 mt-6">
+                                <a target='_blank' href="https://www.youtube.com/@TheSnowww" className="transition-colors hover:text-white" style={{ color: '#555555' }}>
+                                    <Youtube className="w-5 h-5" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="animated-border-card p-8 text-center transition-all hover:scale-105 h-full">
+                        <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
+                            <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #C49A6C, #8C5A3C)' }}>
+                                <img 
+                                    src="/public/edson.png"
+                                    alt="Líder de Marketing" 
+                                    className="w-24 h-24 rounded-full object-cover"
+                                />
+                            </div>
+                            <h3 className="text-xl font-medium mb-1" style={{ fontFamily: "'Spectral', serif" }}>Francisco Edson</h3>
+                            <p className="text-sm mb-4" style={{ color: '#C49A6C' }}>Pós Graduação</p>
+                            <p className="text-base leading-relaxed" style={{ color: '#888888' }}>
+                                Especializado em Informática na Educação e Graduado em Sistemas de Informação pela Faculdade Integral Diferencial (2011). Atualmente Professor Especialista Efetivo do Instituto Federal de Educação, Ciência e Tecnologia do Piauí - Campus Angical. Tem experiência na área de Ciência da Computação, com ênfase em Software de Automação Comercial e Bancos de Dados, atuando principalmente nos seguintes temas: biometria, engenharia de software, heteroidentificação, revisão e bibliografia.
+                            </p>
+                            <div className="flex items-center justify-center gap-4 mt-6">
+                                <a target='_blank' href="https://www.instagram.com/edsonkvalcante/#" className="transition-colors hover:text-white" style={{ color: '#555555' }}>
+                                    <Instagram className="w-5 h-5" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="animated-border-card p-8 text-center transition-all hover:scale-105 h-full">
+                        <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
+                            <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #C49A6C, #8C5A3C)' }}>
+                                {/* Substituído o ícone Megaphone por uma imagem */}
+                                <img 
+                                    src="/caminho/para/imagem4.jpg" 
+                                    alt="Líder de Marketing" 
+                                    className="w-24 h-24 rounded-full object-cover"
+                                />
+                            </div>
+                            <h3 className="text-xl font-medium mb-1" style={{ fontFamily: "'Spectral', serif" }}>Warlles Carlos</h3>
+                            <p className="text-sm mb-4" style={{ color: '#C49A6C' }}>Mestrado Concluído na UFPI</p>
+                            <p className="text-base leading-relaxed" style={{ color: '#888888' }}>
                                 Comunicador estratégico com experiência em startups de tecnologia, construção de marca e desenvolvimento de comunidade.
                             </p>
                             <div className="flex items-center justify-center gap-4 mt-6">
