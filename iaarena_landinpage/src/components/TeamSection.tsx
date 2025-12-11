@@ -32,7 +32,8 @@ const TeamSection = () => {
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #E7C7A0, #C49A6C)' }}>
                                 <img 
-                                    src="./public/jose_vitor.jpeg" 
+                                    // src="./public/jose_vitor.jpeg"
+                                    src="https://img.sanishtech.com/u/073b38b617e6d7719a59900963f4e6c3.jpg"
                                     alt="Menbro 1 (proponente)" 
                                     className="w-24 h-24 rounded-full object-cover"
                                 />
@@ -57,7 +58,8 @@ const TeamSection = () => {
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #C49A6C, #8C5A3C)' }}>
                                 <img 
-                                    src="/public/allan_macedo.png"
+                                    // src="/public/allan_macedo.png"
+                                    src="https://img.sanishtech.com/u/42005384d0c1a701d62f3052ed6cfe68.png"
                                     alt="Líder de Marketing"
                                     className="w-24 h-24 rounded-full object-cover"
                                 />
@@ -79,7 +81,8 @@ const TeamSection = () => {
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #C49A6C, #8C5A3C)' }}>
                                 <img 
-                                    src="/public/edson.png"
+                                    // src="/public/edson.png"
+                                    src="https://img.sanishtech.com/u/4bcf5df2536612caf3ebc9553c2d924d.png"
                                     alt="Líder de Marketing" 
                                     className="w-24 h-24 rounded-full object-cover"
                                 />
