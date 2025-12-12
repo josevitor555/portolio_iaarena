@@ -62,25 +62,25 @@ const MarketSection = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.1 }}
                     >
-                        <div className="p-6 transition-all hover:scale-105 h-full">
+                        <div className="animated-border-card p-6 transition-all hover:scale-105 h-full">
                             <div className="animated-bg-card rounded-xl p-4 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                                 <p className="text-4xl sm:text-5xl font-medium tracking-tight" style={{ fontFamily: "'Spectral', serif", color: '#E7C7A0' }}>$0,5B</p>
                                 <p className="text-base mt-2" style={{ color: '#888888' }}>Espera-se alcançar até 2025</p>
                             </div>
                         </div>
-                        <div className="p-6 transition-all hover:scale-105 h-full">
+                        <div className="animated-border-card p-6 transition-all hover:scale-105 h-full">
                             <div className="animated-bg-card rounded-xl p-4 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                                 <p className="text-4xl sm:text-5xl font-medium tracking-tight" style={{ fontFamily: "'Spectral', serif", color: '#C49A6C' }}>$2,1B</p>
                                 <p className="text-base mt-2" style={{ color: '#888888' }}>Com taxa composta de crescimento anual de 33,5%. Espera-se alcançar $2,1 bilhões até 2030.</p>
                             </div>
                         </div>
-                        <div className="p-6 transition-all hover:scale-105 h-full">
+                        <div className="animated-border-card p-6 transition-all hover:scale-105 h-full">
                             <div className="animated-bg-card rounded-xl p-4 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                                 <p className="text-4xl sm:text-5xl font-medium tracking-tight" style={{ fontFamily: "'Spectral', serif", color: '#8C5A3C' }}>$48M</p>
                                 <p className="text-base mt-2" style={{ color: '#888888' }}>A América Latina se destaca pela sua eficiência de crescimento, gerando aproximadamente US$ 48 milhões em receita adicional para cada 1% de CAGR.</p>
                             </div>
                         </div>
-                        <div className="p-6 transition-all hover:scale-105 h-full">
+                        <div className="animated-border-card p-6 transition-all hover:scale-105 h-full">
                             <div className="animated-bg-card rounded-xl p-4 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                                 <p className="text-4xl sm:text-5xl font-medium tracking-tight" style={{ fontFamily: "'Spectral', serif", color: '#C49A6C' }}>$32,27B</p>
                                 <p className="text-base mt-2" style={{ color: '#888888' }}>O mercado global de IA na educação deverá crescer de US$ 7,71 bilhões em 2025 para US$ 32,27 bilhões em 2030, expandindo a uma taxa composta de crescimento anual de 31,2%.</p>

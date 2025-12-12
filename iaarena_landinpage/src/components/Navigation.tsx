@@ -2,8 +2,9 @@ import { motion } from 'framer-motion';
 
 const Navigation = () => {
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b" style={{ backgroundColor: 'rgba(13, 13, 13, 0.8)', borderColor: '#222222' }}>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        // Changed to fixed positioning, centered with transform, transparent background, rounded borders and higher z-index
+        <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-100 bg-transparent border border-white/10 rounded-2xl backdrop-blur-xl" style={{ width: '90%', maxWidth: '1200px' }}>
+            <div className="px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <motion.div 
                         className="flex items-center gap-2"
@@ -36,8 +37,8 @@ const Navigation = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
-                        <a href="#contact" className="hidden sm:inline-flex px-4 py-2 text-sm font-medium rounded-lg transition-colors border" style={{ color: '#FFFFFF', backgroundColor: 'rgba(255,255,255,0.05)', borderColor: '#333333' }} onMouseOver={(e) => e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.1)'} onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.05)'}>
-                            Fale Conosco
+                        <a target='_blank' href="https://github.com/josevitor555/websocket_application.git" className="hidden sm:inline-flex px-4 py-2 text-sm font-medium rounded-lg transition-colors border" style={{ color: '#FFFFFF', backgroundColor: 'rgba(255,255,255,0.05)', borderColor: '#333333' }} onMouseOver={(e) => e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.1)'} onMouseOut={(e) => e.currentTarget.style.backgroundColor = 'rgba(255,255,255,0.05)'}>
+                            Repositório da Ideia (Sem Deploy)
                         </a>
                         <a href="#pitch" className="px-4 py-2 text-sm font-medium rounded-lg transition-colors" style={{ backgroundColor: '#E7C7A0', color: '#0D0D0D' }} onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#C49A6C'} onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#E7C7A0'}>
                             Assistir Pitch

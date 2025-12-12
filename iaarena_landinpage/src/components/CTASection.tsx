@@ -33,13 +33,13 @@ const CTASection = () => {
                                 <FileText className="w-5 h-5" />
                                 Baixar Especificação Técnica
                             </a>
-                            <a href="mailto:contact@iaarena.io" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-medium rounded-xl transition-colors border hover:bg-white/10" style={{ color: '#FFFFFF', backgroundColor: 'rgba(255,255,255,0.05)', borderColor: '#444444' }}>
+                            <a target='_blank' href="https://github.com/josevitor555/websocket_application.git" className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-medium rounded-xl transition-colors border hover:bg-white/10" style={{ color: '#FFFFFF', backgroundColor: 'rgba(255,255,255,0.05)', borderColor: '#444444' }}>
                                 <Mail className="w-5 h-5" />
-                                Fale Conosco
+                                Repositório da Ideia (Sem Deploy)
                             </a>
                         </motion.div>
 
-                        <motion.div 
+                        {/* <motion.div 
                             className="flex items-center justify-center gap-6 mt-8"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ const CTASection = () => {
                             <a href="https://wa.me/1234567890" className="transition-colors hover:text-white" style={{ color: '#555555' }}>
                                 <MessageCircle className="w-6 h-6" />
                             </a>
-                        </motion.div>
+                        </motion.div> */}
                     </motion.div>
                 </div>
             </div>

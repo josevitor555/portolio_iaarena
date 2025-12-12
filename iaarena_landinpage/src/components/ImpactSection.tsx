@@ -28,7 +28,7 @@ const ImpactSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                    <div className="relative overflow-hidden p-8 transition-all hover:scale-105 h-full">
+                    <div className="animated-border-card relative overflow-hidden p-8 transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <Lightbulb className="w-10 h-10 mb-4" style={{ color: '#E7C7A0' }} />
                             <h3 className="text-xl font-medium mb-3 tracking-tight" style={{ fontFamily: "'Spectral', serif" }}>Pensamento Crítico</h3>
@@ -38,7 +38,7 @@ const ImpactSection = () => {
                         </div>
                     </div>
 
-                    <div className="relative overflow-hidden p-8 transition-all hover:scale-105 h-full">
+                    <div className="animated-border-card relative overflow-hidden p-8 transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <Globe className="w-10 h-10 mb-4" style={{ color: '#C49A6C' }} />
                             <h3 className="text-xl font-medium mb-3 tracking-tight" style={{ fontFamily: "'Spectral', serif" }}>Democratização da IA</h3>
@@ -48,7 +48,7 @@ const ImpactSection = () => {
                         </div>
                     </div>
 
-                    <div className="relative overflow-hidden p-8 transition-all hover:scale-105 h-full">
+                    <div className="animated-border-card relative overflow-hidden p-8 transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <HeartHandshake className="w-10 h-10 mb-4" style={{ color: '#8C5A3C' }} />
                             <h3 className="text-xl font-medium mb-3 tracking-tight" style={{ fontFamily: "'Spectral', serif" }}>Inclusão Tecnológica</h3>

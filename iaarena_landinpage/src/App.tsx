@@ -7,6 +7,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Import pages
 import Home from './pages/Home';
 
+// Import components
+import WarningVideo from './components/WarningVideo';
+
 // Initialize smooth scrolling after component mount
 setTimeout(() => {
   // Smooth scroll for anchor links
@@ -27,6 +30,7 @@ setTimeout(() => {
 export default function App() {
   return (
     <Router>
+      <WarningVideo />
       <Routes>
         {/* 404 not found */}
         <Route path="*" element={<h1>404 Not Found</h1>} />

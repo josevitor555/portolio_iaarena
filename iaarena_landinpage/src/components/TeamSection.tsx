@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
+import { Github, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 const TeamSection = () => {
     return (
@@ -28,13 +28,13 @@ const TeamSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                    <div className="p-8 text-center transition-all hover:scale-105 h-full">
+                    <div className="animated-border-card p-8 text-center transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #E7C7A0, #C49A6C)' }}>
-                                <img 
+                                <img
                                     // src="./public/jose_vitor.jpeg"
                                     src="https://img.sanishtech.com/u/073b38b617e6d7719a59900963f4e6c3.jpg"
-                                    alt="Menbro 1 (proponente)" 
+                                    alt="Menbro 1 (proponente)"
                                     className="w-24 h-24 rounded-full object-cover"
                                 />
                             </div>
@@ -54,10 +54,10 @@ const TeamSection = () => {
                         </div>
                     </div>
 
-                    <div className="p-8 text-center transition-all hover:scale-105 h-full">
+                    <div className="animated-border-card p-8 text-center transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #C49A6C, #8C5A3C)' }}>
-                                <img 
+                                <img
                                     // src="/public/allan_macedo.png"
                                     src="https://img.sanishtech.com/u/42005384d0c1a701d62f3052ed6cfe68.png"
                                     alt="Líder de Marketing"
@@ -77,13 +77,13 @@ const TeamSection = () => {
                         </div>
                     </div>
 
-                    <div className="p-8 text-center transition-all hover:scale-105 h-full">
+                    <div className="animated-border-card p-8 text-center transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #C49A6C, #8C5A3C)' }}>
-                                <img 
+                                <img
                                     // src="/public/edson.png"
                                     src="https://img.sanishtech.com/u/4bcf5df2536612caf3ebc9553c2d924d.png"
-                                    alt="Líder de Marketing" 
+                                    alt="Líder de Marketing"
                                     className="w-24 h-24 rounded-full object-cover"
                                 />
                             </div>
@@ -100,29 +100,48 @@ const TeamSection = () => {
                         </div>
                     </div>
 
-                    <div className="p-8 text-center transition-all hover:scale-105 h-full">
+                    <div className="animated-border-card p-8 text-center transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #C49A6C, #8C5A3C)' }}>
                                 {/* Substituído o ícone Megaphone por uma imagem */}
-                                <img 
-                                    src="/caminho/para/imagem4.jpg" 
-                                    alt="Líder de Marketing" 
+                                <img
+                                    src="/caminho/para/imagem4.jpg"
+                                    alt="Líder de Marketing"
                                     className="w-24 h-24 rounded-full object-cover"
+                                    onError={(e) => {
+                                        // Fallback para ícone User caso a imagem não carregue
+                                        const target = e.target as HTMLImageElement;
+                                        target.onerror = null;
+                                        target.style.display = 'none';
+                                        
+                                        // Criar elemento do ícone
+                                        const iconContainer = document.createElement('div');
+                                        iconContainer.className = 'flex items-center justify-center w-full h-full';
+                                        iconContainer.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
+                                        iconContainer.querySelector('svg')?.setAttribute('style', 'color: #fafafa;');
+                                        
+                                        // Adicionar ícone ao container
+                                        target.parentElement?.appendChild(iconContainer);
+                                    }}
                                 />
                             </div>
                             <h3 className="text-xl font-medium mb-1" style={{ fontFamily: "'Spectral', serif" }}>Warlles Carlos</h3>
                             <p className="text-sm mb-4" style={{ color: '#C49A6C' }}>Mestrado Concluído na UFPI</p>
                             <p className="text-base leading-relaxed" style={{ color: '#888888' }}>
-                                Comunicador estratégico com experiência em startups de tecnologia, construção de marca e desenvolvimento de comunidade.
+                                Professor do Instituto Federal de Educação, Ciência e Tecnologia do Piauí (IFPI) desde 2012, atuando atualmente no Campus Angical.
+                                Atuou por 13 anos no Colégio Certo, em Teresina, ministrando a disciplina de Matemática.
+                                Mestre em Teoria da Computação pela Universidade Federal do Ceará (UFC), Campus Quixadá.
+                                Especialista em Banco de Dados.
+                                Bacharel em Ciências da Computação pela Universidade Federal do Piauí (UFPI)
                             </p>
-                            <div className="flex items-center justify-center gap-4 mt-6">
+                            {/* <div className="flex items-center justify-center gap-4 mt-6">
                                 <a href="#" className="transition-colors hover:text-white" style={{ color: '#555555' }}>
                                     <Twitter className="w-5 h-5" />
                                 </a>
                                 <a href="#" className="transition-colors hover:text-white" style={{ color: '#555555' }}>
                                     <Linkedin className="w-5 h-5" />
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </motion.div>

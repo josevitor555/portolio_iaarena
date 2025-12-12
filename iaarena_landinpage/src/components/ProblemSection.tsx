@@ -42,7 +42,7 @@ const ProblemSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                    <div className="p-8 transition-all hover:scale-105 h-full">
+                    <div className="animated-border-card p-8 transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-8 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: 'rgba(231, 199, 160, 0.1)' }}>
                                 <FontAwesomeIcon icon={faMessage} className="w-6 h-6" style={{ color: '#E7C7A0' }} />
@@ -52,7 +52,7 @@ const ProblemSection = () => {
                         </div>
                     </div>
 
-                    <div className="p-8 transition-all hover:scale-105 h-full">
+                    <div className="animated-border-card p-8 transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-8 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-8" style={{ backgroundColor: 'rgba(231, 199, 160, 0.1)' }}>
                                 <FontAwesomeIcon icon={faUsers} className="w-6 h-6" style={{ color: '#E7C7A0' }} />
@@ -62,7 +62,7 @@ const ProblemSection = () => {
                         </div>
                     </div>
 
-                    <div className="p-8 transition-all hover:scale-105 h-full">
+                    <div className="animated-border-card p-8 transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-8 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: 'rgba(231, 199, 160, 0.1)' }}>
                                 <FontAwesomeIcon icon={faLayerGroup} className="w-6 h-6" style={{ color: '#E7C7A0' }} />

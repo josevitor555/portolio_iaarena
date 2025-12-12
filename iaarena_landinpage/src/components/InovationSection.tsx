@@ -28,7 +28,7 @@ const InovationSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                 >
-                    <div className="text-center p-6 transition-all hover:scale-105 h-full">
+                    <div className="animated-border-card text-center p-6 transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4" style={{ background: 'linear-gradient(135deg, rgba(231, 199, 160, 0.15), rgba(196, 154, 108, 0.15))', border: '1px solid rgba(231, 199, 160, 0.3)' }}>
                                 <Scale className="w-8 h-8" style={{ color: '#E7C7A0' }} />
@@ -38,7 +38,7 @@ const InovationSection = () => {
                         </div>
                     </div>
 
-                    <div className="text-center p-6 transition-all hover:scale-105 h-full">
+                    <div className="animated-border-card text-center p-6 transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4" style={{ background: 'linear-gradient(135deg, rgba(196, 154, 108, 0.15), rgba(140, 90, 60, 0.15))', border: '1px solid rgba(196, 154, 108, 0.3)' }}>
                                 <Trophy className="w-8 h-8" style={{ color: '#C49A6C' }} />
@@ -48,7 +48,7 @@ const InovationSection = () => {
                         </div>
                     </div>
 
-                    <div className="text-center p-6 transition-all hover:scale-105 h-full">
+                    <div className="animated-border-card text-center p-6 transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4" style={{ background: 'linear-gradient(135deg, rgba(196, 154, 108, 0.15), rgba(140, 90, 60, 0.15))', border: '1px solid rgba(196, 154, 108, 0.3)' }}>
                                 <Blocks className="w-8 h-8" style={{ color: '#C49A6C' }} />
@@ -58,7 +58,7 @@ const InovationSection = () => {
                         </div>
                     </div>
 
-                    <div className="text-center p-6 transition-all hover:scale-105 h-full">
+                    <div className="animated-border-card text-center p-6 transition-all hover:scale-105 h-full">
                         <div className="animated-bg-card rounded-xl p-6 h-full" style={{ backgroundColor: '#0D0D0D' }}>
                             <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4" style={{ background: 'linear-gradient(135deg, rgba(140, 90, 60, 0.15), rgba(107, 68, 35, 0.15))', border: '1px solid rgba(140, 90, 60, 0.3)' }}>
                                 <Radio className="w-8 h-8" style={{ color: '#8C5A3C' }} />
