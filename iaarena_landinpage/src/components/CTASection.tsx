@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Github, Twitter, Linkedin, MessageCircle, FileText } from 'lucide-react';
+import { Mail, FileText } from 'lucide-react';
 
 const CTASection = () => {
     return (
